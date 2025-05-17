@@ -36,7 +36,7 @@ export default function HeroSection() {
           <div
             className="
     relative h-[400px] lg:h-[500px] rounded-xl 
-  
+   filter drop-shadow-[0_10px_10px_rgba(0,0,0,0.6)]
   overflow-hidden rounded-full animate-waltz
   "
           >
@@ -44,7 +44,7 @@ export default function HeroSection() {
               src="logo1.png"
               alt="Loulou et Joujou Clown en animation"
               fill
-              className="object-cover"
+              className="object-cover "
               priority
             />
           </div>
