@@ -21,6 +21,7 @@ export async function sendEmail(data: EmailData): Promise<void> {
       from_email: data.email,
       phone: data.phone,
       event_type: data.eventType,
+      pack: data.pack,
       event_date: data.date,
       message: data.message,
     }

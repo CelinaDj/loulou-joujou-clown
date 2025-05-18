@@ -21,6 +21,7 @@ const formSchema = z.object({
   name: z.string().min(2, { message: "Le nom doit contenir au moins 2 caractères" }),
   email: z.string().email({ message: "Veuillez entrer une adresse email valide" }),
   phone: z.string().min(10, { message: "Veuillez entrer un numéro de téléphone valide" }),
+  pack: z.string().min(1, { message: "Veuillez sélectionner un pack" }),
   eventType: z.string().min(1, { message: "Veuillez sélectionner un type d'événement" }),
   date: z.date({ required_error: "Veuillez sélectionner une date" }),
   message: z.string().optional(),
@@ -51,6 +52,7 @@ export default function ReservationPage() {
         email: data.email,
         phone: data.phone,
         eventType: data.eventType,
+        pack: data.pack,
         date: format(data.date, "dd/MM/yyyy"),
         message: data.message || "Pas de message",
       })
@@ -84,7 +86,7 @@ export default function ReservationPage() {
             Nous avons bien reçu votre demande de réservation et nous vous contacterons très prochainement pour
             confirmer les détails.
           </p>
-          <Button asChild className="bg-[#F88E8E] hover:bg-[#e67e7e]">
+          <Button asChild className="bg-[#c184c2] hover:bg-[#c184c2]">
             <a href="/">Retour à l'accueil</a>
           </Button>
         </div>
@@ -164,7 +166,7 @@ export default function ReservationPage() {
                       <SelectContent>
                         <SelectItem value="anniversaire">Anniversaire</SelectItem>
                         <SelectItem value="mariage">Mariage</SelectItem>
-                        <SelectItem value="entreprise">Événement d'entreprise</SelectItem>
+                        <SelectItem value="entreprise">Evenement</SelectItem>
                         <SelectItem value="autre">Autre</SelectItem>
                       </SelectContent>
                     </Select>
@@ -210,7 +212,31 @@ export default function ReservationPage() {
                 )}
               />
             </div>
-
+<FormField
+  control={form.control}
+  name="pack"
+  render={({ field }) => (
+    <FormItem>
+      <FormLabel>Pack choisi</FormLabel>
+      <Select onValueChange={field.onChange} defaultValue={field.value}>
+        <FormControl>
+          <SelectTrigger>
+            <SelectValue placeholder="Sélectionnez un pack" />
+          </SelectTrigger>
+        </FormControl>
+        <SelectContent>
+          <SelectItem value="pack etoile">Pack Étoile</SelectItem>
+          <SelectItem value="pack magique">Pack Magique</SelectItem>
+          <SelectItem value="pack royale">Pack Royale</SelectItem>
+          <SelectItem value="pack etoile mascotte">Pack Étoile + Mascotte</SelectItem>
+          <SelectItem value="pack magique mascotte">Pack Magique + Mascotte</SelectItem>
+          <SelectItem value="pack royale mascotte">Pack Royale + Mascotte</SelectItem>
+        </SelectContent>
+      </Select>
+      <FormMessage />
+    </FormItem>
+  )}
+/>
             <FormField
               control={form.control}
               name="message"
@@ -233,7 +259,7 @@ export default function ReservationPage() {
               )}
             />
 
-            <Button type="submit" className="w-full bg-[#F88E8E] hover:bg-[#e67e7e]" disabled={isSubmitting}>
+            <Button type="submit" className="w-full bg-[#c184c2] hover:bg-[#c184c2]" disabled={isSubmitting}>
               {isSubmitting ? "Envoi en cours..." : "Envoyer ma demande"}
             </Button>
           </form>

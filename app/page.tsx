@@ -28,8 +28,8 @@ export default function Home() {
             />
             <ServiceCard
               icon={<Balloon className="h-10 w-10 text-[#c184c2]" />}
-              title="Événements d'entreprise"
-              description="Animations professionnelles pour vos événements d'entreprise, séminaires et fêtes de fin d'année."
+              title=" Autres Événements"
+              description="Animations professionnelles pour tout vos événements,  et fêtes de fin d'année."
             />
           </div>
           <div className="text-center mt-12">
@@ -74,22 +74,58 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Témoignages</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <TestimonialCard
-              name="Marie L."
-              event="Anniversaire 6 ans"
+              name="Client "
+              event="Anniversaire "
               rating={5}
-              testimonial="Loulou et Joujou ont fait un travail extraordinaire pour l'anniversaire de ma fille. Les enfants étaient enchantés et les parents impressionnés !"
+              testimonial="Loulou et Joujou vous avez fait un travail extraordinaire pour l'anniversaire de ma fille. Les enfants étaient enchantés et les parents impressionnés !"
             />
             <TestimonialCard
-              name="Thomas D."
+              name="Spectateur "
+              event="Mariage "
+              rating={4}
+              testimonial="Bravo ! vous etes adorables vraiment vous avez fait un tres bon travail bon courage et bonne continuation !  "
+            />
+              <TestimonialCard
+              name="Spectateur "
+              event="Mariage "
+              rating={5}
+              testimonial="Tout le monde regarde moi ça !!!! voila le vrai travail, vous etes des artistes, le vrai clown c'est celui qui rend les enfants heureux comme ses deux clownette la ! je vous encourage vraiment loulou et joujou  "
+            />
+              <TestimonialCard
+              name="Client "
+              event="Evenement "
+              rating={5}
+              testimonial="OMG Soooo cute je vous aime trop loulou et joujou votre travail est magnifique ainsi que vos maquillage artistique et vous savez bien comment gérer votre travail et faire dessiner un grand sourire sur les visages des enfants ! bon courage mes chères  "
+            />
+            <TestimonialCard
+              name="Client"
               event="Mariage"
               rating={5}
-              testimonial="Une animation parfaite pour notre mariage ! Ils ont su divertir les enfants pendant que les adultes profitaient de la soirée. Merci !"
+              testimonial="Une animation parfaite pour notre mariage ! vous avez su divertir les enfants pendant que les adultes profitaient de la soirée. Merci et bonne continuation !"
             />
             <TestimonialCard
-              name="Entreprise XYZ"
-              event="Fête de Noël"
+              name="Client"
+              event="Fete de fin d'année "
               rating={5}
-              testimonial="Professionnels, ponctuels et très talentueux. Nos employés et leurs enfants ont adoré l'animation de notre fête de fin d'année."
+              testimonial="Professionnels, ponctuels et très talentueux. les enfants ont adoré l'animation de notre fête de fin d'année."
+            />
+              <TestimonialCard
+              name="Spectateur"
+              event="Fete de fin d'année crèche "
+              rating={5}
+              testimonial="Il n'y a aucun moyen décrire ce sentiment, de voir le sourire sur les visages des autres et de savoir que vous etes la raison de ce sourire, comment vous sentirez-vous alors? leurs rires joyeux et leurs sourires quand ils vous regardaient était magiques car ils savaient que vous étiez la raison de bonheur pour eux et leurs familles.  Soyez celui qui fait sourire Ahudu Ahunu felawen afud igerzen Soyez celui qui fait bouger les choses.  Toi.. oui, tu es la seule personne qui dessinera un sourire !   Et personne d'autres"
+            />
+              <TestimonialCard
+              name="Spectateur"
+              event="Fete de fin d'année crèche "
+              rating={5}
+              testimonial="Loulou & Joujou Clown Merci pour le travail et merci d'apporter du bonheur aux enfants et de faire sortir leurs rires et leur joie, je vous souhaite bonne chance pour votre travail et votre bénévolat et votre dévouement aux enfants. Bonne chance et plus de succès si dieu le veut "
+            />
+              <TestimonialCard
+              name="Crèche The Best Kids Barbacha"
+              event="Fete de fin d'année crèche "
+              rating={4}
+              testimonial="Vous etes vraiment magnifique, bonne continuation !!!! "
             />
           </div>
         </div>

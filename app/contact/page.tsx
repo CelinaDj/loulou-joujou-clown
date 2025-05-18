@@ -24,40 +24,40 @@ export default function ContactPage() {
         <div>
           <h2 className="text-3xl font-bold mb-6">Nos coordonnées</h2>
           <div className="space-y-6">
-            <div className="flex items-start gap-4">
+            {/* <div className="flex items-start gap-4">
               <div className="bg-[#FFED4A] p-3 rounded-full">
-                <Phone className="h-6 w-6 text-[#F88E8E]" />
+                <Phone className="h-6 w-6 text-[#c184c2]" />
               </div>
               <div>
                 <h3 className="font-semibold text-lg">Téléphone</h3>
                 <p className="text-muted-foreground">Du lundi au samedi, de 9h à 19h</p>
-                <a href="tel:+33600000000" className="text-[#F88E8E] font-medium hover:underline">
+                <a href="tel:+33600000000" className="text-[#c184c2] font-medium hover:underline">
                   06 00 00 00 00
                 </a>
               </div>
-            </div>
+            </div> */}
 
             <div className="flex items-start gap-4">
               <div className="bg-[#FFED4A] p-3 rounded-full">
-                <Mail className="h-6 w-6 text-[#F88E8E]" />
+                <Mail className="h-6 w-6 text-[#c184c2]" />
               </div>
               <div>
                 <h3 className="font-semibold text-lg">Email</h3>
                 <p className="text-muted-foreground">Nous vous répondons sous 24h</p>
-                <a href="mailto:contact@loulou-joujou-clown.fr" className="text-[#F88E8E] font-medium hover:underline">
-                  contact@loulou-joujou-clown.fr
+                <a href="mailto:loulou.joujou.clown@gmail.com" className="text-[#c184c2] font-medium hover:underline">
+                  loulou.joujou.clown@gmail.com
                 </a>
               </div>
             </div>
 
             <div className="flex items-start gap-4">
               <div className="bg-[#FFED4A] p-3 rounded-full">
-                <MapPin className="h-6 w-6 text-[#F88E8E]" />
+                <MapPin className="h-6 w-6 text-[#c184c2]" />
               </div>
               <div>
                 <h3 className="font-semibold text-lg">Zone d'intervention</h3>
                 <p className="text-muted-foreground">Nous intervenons dans un rayon de 50km autour de :</p>
-                <p className="font-medium">Paris et sa région</p>
+                <p className="font-medium">Béjaia et ces communes </p>
               </div>
             </div>
           </div>
@@ -66,19 +66,19 @@ export default function ContactPage() {
             <h3 className="font-semibold text-lg mb-4">Suivez-nous</h3>
             <div className="flex gap-4">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=100066308755542"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#F88E8E] text-white p-3 rounded-full hover:bg-[#e67e7e] transition-colors"
+                className="bg-[#c184c2] text-white p-3 rounded-full hover:bg-[#c184c2] transition-colors"
               >
                 <Facebook className="h-6 w-6" />
                 <span className="sr-only">Facebook</span>
               </a>
               <a
-                href="https://instagram.com"
+                href="instagram.com/louloujoujou_clown?igsh=d2U4cXJ1azN6aDlk"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#F88E8E] text-white p-3 rounded-full hover:bg-[#e67e7e] transition-colors"
+                className="bg-[#c184c2] text-white p-3 rounded-full hover:bg-[#c184c2] transition-colors"
               >
                 <Instagram className="h-6 w-6" />
                 <span className="sr-only">Instagram</span>
@@ -106,7 +106,7 @@ export default function ContactPage() {
                   <li>Durée d'animation souhaitée</li>
                 </ul>
               </div>
-              <Button asChild className="w-full bg-[#F88E8E] hover:bg-[#e67e7e]">
+              <Button asChild className="w-full bg-[#c184c2] hover:bg-[#c184c2]">
                 <Link href="/reservation">Demander un devis</Link>
               </Button>
             </div>
@@ -121,7 +121,7 @@ export default function ContactPage() {
           <div className="bg-gray-50 p-6 rounded-lg">
             <h3 className="font-semibold text-lg mb-2">Quelle est votre zone d'intervention ?</h3>
             <p>
-              Nous intervenons principalement à Paris et en région parisienne, dans un rayon de 50km. Pour des distances
+              Nous intervenons principalement à Béjaia et ces environs. Pour des distances
               plus importantes, des frais de déplacement peuvent s'appliquer.
             </p>
           </div>
@@ -156,7 +156,7 @@ export default function ContactPage() {
       <div className="bg-[#FFED4A] p-8 rounded-xl text-center">
         <h2 className="text-2xl font-bold mb-4">Prêt à réserver votre animation ?</h2>
         <p className="mb-6">N'attendez plus et contactez-nous dès maintenant pour créer des souvenirs inoubliables !</p>
-        <Button asChild className="bg-[#F88E8E] hover:bg-[#e67e7e]">
+        <Button asChild className="bg-[#c184c2] hover:bg-[#c184c2]">
           <Link href="/reservation">Réserver maintenant</Link>
         </Button>
       </div>

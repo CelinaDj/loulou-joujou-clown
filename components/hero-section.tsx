@@ -13,7 +13,7 @@ export default function HeroSection() {
             </h1>
             <p className="text-xl mb-8 max-w-lg mx-auto lg:mx-0">
               Loulou & Joujou Clown, duo de clowns professionnels, apporte joie
-              et magie à vos anniversaires, mariages et événements d'entreprise.
+              et magie à vos anniversaires, mariages et Autres Événements.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button

@@ -5,7 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 export const metadata: Metadata = {
   title: "Galerie | Loulou & Joujou Clown",
   description:
-    "Découvrez nos animations en images : anniversaires, mariages, événements d'entreprise. Galerie photos et vidéos de Loulou & Joujou Clown.",
+    "Découvrez nos animations en images : anniversaires, mariages, événements. Galerie photos et vidéos de Loulou & Joujou Clown.",
 }
 
 export default function GalleryPage() {
@@ -22,7 +22,7 @@ export default function GalleryPage() {
         <TabsList className="grid w-full grid-cols-3 mb-8">
           <TabsTrigger value="anniversaires">Anniversaires</TabsTrigger>
           <TabsTrigger value="mariages">Mariages</TabsTrigger>
-          <TabsTrigger value="entreprises">Événements d'entreprise</TabsTrigger>
+          <TabsTrigger value="entreprises">Autres Événements</TabsTrigger>
         </TabsList>
 
         <TabsContent value="anniversaires">
@@ -94,12 +94,27 @@ export default function GalleryPage() {
         <h2 className="text-3xl font-bold mb-8 text-center">Nos Vidéos</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="aspect-video bg-gray-100 rounded-lg flex items-center justify-center">
-            <p className="text-muted-foreground">Vidéo d'animation 1</p>
-            {/* Ici, vous pourriez intégrer une vidéo YouTube ou autre */}
+            
+            <a
+  href="https://www.instagram.com/reel/DJcKGIfIWFI/?igsh=MWYzdmo5M2psdmt2dg=="
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block aspect-video bg-gray-100 rounded-lg overflow-hidden"
+>
+  <img src="1.jpg" alt="Vidéo Instagram" className="object-cover w-full h-full" />
+  
+</a>
           </div>
           <div className="aspect-video bg-gray-100 rounded-lg flex items-center justify-center">
-            <p className="text-muted-foreground">Vidéo d'animation 2</p>
-            {/* Ici, vous pourriez intégrer une vidéo YouTube ou autre */}
+            
+            <a
+  href="https://www.instagram.com/reel/DAKL9JKND0v/?igsh=OGF2ejJqcmlyYXpv"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block aspect-video bg-gray-100 rounded-lg overflow-hidden"
+>
+  <img src="histoire.jpg" alt="Vidéo Instagram" className="object-cover w-full h-full" />
+</a>
           </div>
         </div>
       </section>
